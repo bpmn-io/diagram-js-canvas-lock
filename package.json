@@ -1,0 +1,68 @@
+{
+  "name": "diagram-js-canvas-lock",
+  "version": "0.0.0",
+  "description": "A diagram-js plugin for locking the canvas",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "all": "run-s lint test build",
+    "test": "karma start karma.config.js",
+    "lint": "eslint .",
+    "dev": "npm test -- --auto-watch --no-single-run",
+    "start": "cross-env SINGLE_START=modeler npm run dev",
+    "build": "rollup -c --bundleConfigAsCjs",
+    "prepare": "run-s build"
+  },
+  "keywords": [
+    "diagram-js",
+    "canvas",
+    "lock"
+  ],
+  "author": "Philipp Fromme <philipp.fromme@camunda.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "assets",
+    "dist"
+  ],
+  "peerDependencies": {
+    "diagram-js": ">= 15.16.0",
+    "diagram-js-direct-editing": ">= 3.4.0"
+  },
+  "peerDependenciesMeta": {
+    "diagram-js-direct-editing": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.2",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "babel-loader": "^10.1.1",
+    "babel-plugin-istanbul": "^8.0.0",
+    "bpmn-js": "^18.19.0",
+    "chai": "^6.2.2",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.39.4",
+    "eslint-plugin-bpmn-io": "^2.2.0",
+    "karma": "^6.4.4",
+    "karma-chrome-launcher-2": "^3.3.0",
+    "karma-coverage": "^2.2.1",
+    "karma-debug-launcher": "^0.0.5",
+    "karma-env-preprocessor": "^0.1.1",
+    "karma-mocha": "^2.0.1",
+    "karma-tldr-reporter": "^1.0.0",
+    "karma-webpack": "^5.0.1",
+    "mocha": "^11.7.5",
+    "mocha-test-container-support": "^0.2.0",
+    "npm-run-all2": "^8.0.4",
+    "puppeteer": "^25.2.1",
+    "raw-loader": "^4.0.2",
+    "rollup": "^4.60.1",
+    "sinon": "^22.0.0",
+    "sinon-chai": "^4.0.1",
+    "webpack": "^5.106.2"
+  }
+}
