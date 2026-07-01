@@ -1,5 +1,5 @@
 {
-  "name": "diagram-js-canvas-lock",
+  "name": "@bpmn-io/diagram-js-canvas-lock",
   "version": "0.0.0",
   "description": "A diagram-js plugin for locking the canvas",
   "main": "lib/index.js",

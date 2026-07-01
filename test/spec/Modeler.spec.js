@@ -11,7 +11,7 @@ import {
   insertBpmnStyles
 } from '../TestHelper.js';
 
-import CanvasLockModule from 'diagram-js-canvas-lock';
+import CanvasLockModule from '../../lib/index.js';
 
 import diagramXML from '../fixtures/simple.bpmn';
 

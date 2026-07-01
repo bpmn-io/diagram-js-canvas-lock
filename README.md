@@ -13,7 +13,7 @@ This module extends [diagram-js](https://github.com/bpmn-io/diagram-js)-based ed
 Install via npm:
 
 ```sh
-npm install diagram-js-canvas-lock
+npm install @bpmn-io/diagram-js-canvas-lock
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ npm install diagram-js-canvas-lock
 Use as an extension for [bpmn-js](https://github.com/bpmn-io/bpmn-js):
 
 ```javascript
-import CanvasLockModule from 'diagram-js-canvas-lock';
+import CanvasLockModule from '@bpmn-io/diagram-js-canvas-lock';
 
 const modeler = new BpmnModeler({
   additionalModules: [

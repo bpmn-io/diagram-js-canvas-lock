@@ -6,7 +6,7 @@ import {
 
 import { expect } from 'chai';
 
-import CanvasLockModule from 'diagram-js-canvas-lock';
+import CanvasLockModule from '../../lib/index.js';
 
 import diagramXML from '../fixtures/simple.bpmn';
 
