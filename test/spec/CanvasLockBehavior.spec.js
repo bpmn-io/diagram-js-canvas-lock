@@ -2,11 +2,11 @@ import {
   bootstrapModeler,
   inject,
   insertBpmnStyles
-} from '../TestHelper';
+} from '../TestHelper.js';
 
 import { expect } from 'chai';
 
-import CanvasLockModule from '../../lib';
+import CanvasLockModule from 'diagram-js-canvas-lock';
 
 import diagramXML from '../fixtures/simple.bpmn';
 

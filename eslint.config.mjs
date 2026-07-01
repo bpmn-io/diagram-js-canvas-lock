@@ -3,6 +3,7 @@ import bpmnIoPlugin from 'eslint-plugin-bpmn-io';
 const files = {
   build: [
     '*.js',
+    '*.cjs',
     '*.mjs'
   ],
   ignored: [
@@ -46,7 +47,6 @@ export default [
   {
     languageOptions: {
       globals: {
-        require: false,
         sinon: false
       }
     },

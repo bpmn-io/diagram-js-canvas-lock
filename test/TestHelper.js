@@ -1,11 +1,16 @@
 import {
   bootstrapBpmnJS,
   insertCSS
-} from 'bpmn-js/test/helper';
+} from 'bpmn-js/test/helper/index.js';
 
-import Modeler from 'bpmn-js/lib/Modeler';
+import Modeler from 'bpmn-js/lib/Modeler.js';
 
-export * from 'bpmn-js/test/helper';
+import diagramCSS from 'bpmn-js/dist/assets/diagram-js.css';
+import bpmnJSCSS from 'bpmn-js/dist/assets/bpmn-js.css';
+import bpmnFontCSS from 'bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css';
+import canvasLockCSS from '../assets/canvas-lock.css';
+
+export * from 'bpmn-js/test/helper/index.js';
 
 export function bootstrapModeler(diagram, options, locals) {
   return bootstrapBpmnJS(Modeler, diagram, options, locals);
@@ -24,23 +29,11 @@ export function enableLogging(modeler, enabled) {
 }
 
 export function insertBpmnStyles() {
-  insertCSS(
-    'diagram.css',
-    require('bpmn-js/dist/assets/diagram-js.css').default
-  );
+  insertCSS('diagram.css', diagramCSS);
 
-  insertCSS(
-    'bpmn-js.css',
-    require('bpmn-js/dist/assets/bpmn-js.css').default
-  );
+  insertCSS('bpmn-js.css', bpmnJSCSS);
 
-  insertCSS(
-    'bpmn-font.css',
-    require('bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css').default
-  );
+  insertCSS('bpmn-font.css', bpmnFontCSS);
 
-  insertCSS(
-    'canvas-lock.css',
-    require('../assets/canvas-lock.css').default
-  );
+  insertCSS('canvas-lock.css', canvasLockCSS);
 }
