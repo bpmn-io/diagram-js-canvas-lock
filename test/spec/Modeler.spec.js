@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import Modeler from 'bpmn-js/lib/Modeler';
+import Modeler from 'bpmn-js/lib/Modeler.js';
 
 import TestContainer from 'mocha-test-container-support';
 
@@ -9,9 +9,9 @@ import {
   clearBpmnJS,
   enableLogging,
   insertBpmnStyles
-} from '../TestHelper';
+} from '../TestHelper.js';
 
-import CanvasLockModule from '../../lib';
+import CanvasLockModule from 'diagram-js-canvas-lock';
 
 import diagramXML from '../fixtures/simple.bpmn';
 
