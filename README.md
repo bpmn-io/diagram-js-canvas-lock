@@ -1,6 +1,6 @@
 # diagram-js-canvas-lock
 
-[![CI](https://github.com/philippfromme/diagram-js-canvas-lock/actions/workflows/CI.yml/badge.svg)](https://github.com/philippfromme/diagram-js-canvas-lock/actions/workflows/CI.yml)
+[![CI](https://github.com/bpmn-io/diagram-js-canvas-lock/actions/workflows/CI.yml/badge.svg)](https://github.com/bpmn-io/diagram-js-canvas-lock/actions/workflows/CI.yml)
 
 This module extends [diagram-js](https://github.com/bpmn-io/diagram-js)-based editors with a canvas lock feature.
 
