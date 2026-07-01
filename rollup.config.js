@@ -3,7 +3,10 @@ const json = require('@rollup/plugin-json');
 const nodeResolve = require('@rollup/plugin-node-resolve');
 
 const pkg = require('./package.json');
-const nonbundledDependencies = Object.keys({ ...pkg.dependencies });
+const nonbundledDependencies = Object.keys({
+  ...pkg.dependencies,
+  ...pkg.peerDependencies
+});
 
 module.exports = {
   input: 'lib/index.js',
